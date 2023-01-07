@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- form tag is used for collectting data from user -->
+    <!-- input element- is  used for typing text,check box,radio button
+    and submit. can also have a file type -->
+    <div>
+        <h1>Application Form</h1>
+        <form action="Application.php">
+            <input type="text" placeholder="First Name"><br>
+            <input type="text" placeholder="Last Name"><br>
+            <label for="ageid18+">
+                <input type="radio" value="18" name="Age" id="ageid">Click When 18+
+            </label>
+            <label for="ageid>18">
+                <input type="radio" value=">18" name="Age" id="ageid>18">Click when >18
+            </label>
+            <label for="ageid<50">
+                <input type="radio" value=">18" name="Age" id="ageid<50">Click when greaterthan 50
+            </label><br>
+            <input type="number" placeholder="Enter Your Mobile number"><br>
+            <input type="email" placeholder="Enter Your Email"><br>
+            <input type="checkbox" name="canteen" id="trainfoodid" class="red">
+            <label for="trainfoodid"> Order Food</label><br>
+            <textarea name="review" id="review" cols="30" rows="10" placeholder="How Was Your Last Trip?"></textarea>
+        </form>
+        <div>
+            <h2>Welcome To mahindra</h2>
+            <select name="car" id="carid">
+                <option value="none">Select Your Car</option>
+                <option value="mahindras10+">Scarpio s10+</option>
+                <option value="mahindras20+">Scarpio s20+</option>
+                <option value="mahindras30+">Scarpio s30+</option>
+                <option value="mahindraxuv500">Xuv 500</option>
+                <option value="mahindraP2.4L">Pickup 2.4L</option>
+                <option value="mahindraEC">Electric car</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
